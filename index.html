@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Grid-edge energy orchestration — aggregate batteries, EVs, and solar into virtual power plants, arbitrage time-of-use rates, and get paid for flexibility.">
+  <title>VoltMesh — Your Batteries, EVs &amp; Solar, Finally on the Same Team</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#1b2e1d"/>
+          <path d="M17.5 5 9 18h6l-1.5 9L23 14h-6z" fill="#a3e635" stroke="none"/>
+        </svg>
+        <span data-company>VoltMesh</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Platform</a>
+        <a href="#how">How it works</a>
+        <a href="#returns">Returns</a>
+      </nav>
+      <a href="#cta" class="btn btn-primary btn-sm">Check eligibility</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Grid-edge energy orchestration</p>
+        <h1>Your battery, EV, and solar each have a brain. Give them one.</h1>
+        <p class="lead"><span data-company>VoltMesh</span> coordinates everything behind your meter — charging when power is cheap, selling back when it's dear, and pooling thousands of homes into a virtual power plant utilities pay real money for.</p>
+        <div class="hero-actions">
+          <a href="#cta" class="btn btn-primary">Check your eligibility</a>
+          <a href="#how" class="btn btn-ghost">How the money flows</a>
+        </div>
+        <p class="hero-note">Works with 40+ batteries, EVs, inverters &amp; smart panels · no new hardware</p>
+      </div>
+
+      <!-- Hero visual: energy flow node diagram + price ticker -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="grid-viz">
+          <div class="price-ticker">
+            <span class="tick-label">Grid price now</span>
+            <span class="tick-price">$0.41/kWh</span>
+            <span class="tick-state">PEAK — selling</span>
+          </div>
+          <div class="flow">
+            <div class="flow-node solar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M5.6 18.4l1.8-1.8M16.6 7.4l1.8-1.8"/></svg>
+              <b>Solar</b><span>4.1 kW</span>
+            </div>
+            <div class="flow-node home">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 9.5V20h12V9.5"/></svg>
+              <b>Home</b><span>1.2 kW</span>
+            </div>
+            <div class="flow-node batt">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="7" width="13" height="10" rx="2"/><path d="M20 10v4"/><path d="M8 10v4M11 10v4M14 10v4" opacity="0.6"/></svg>
+              <b>Battery</b><span>92% · discharging</span>
+            </div>
+            <div class="flow-node ev">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16l1.5-5.5A2 2 0 0 1 8.4 9h7.2a2 2 0 0 1 1.9 1.5L19 16"/><path d="M4 16h16v3h-2.5M4 19h2.5" opacity="0.7"/><circle cx="8" cy="18" r="1.6"/><circle cx="16" cy="18" r="1.6"/></svg>
+              <b>EV</b><span>paused until 11 PM</span>
+            </div>
+            <div class="flow-node grid">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 6 21M12 3l6 18M8 9h8M6.8 14h10.4"/></svg>
+              <b>Grid</b><span>← exporting 3.4 kW</span>
+            </div>
+            <svg class="flow-lines" viewBox="0 0 300 170" preserveAspectRatio="none">
+              <path d="M60 38 C 100 60, 120 70, 148 82" class="fl"/>
+              <path d="M150 90 C 120 110, 100 120, 65 132" class="fl"/>
+              <path d="M155 90 C 185 110, 205 120, 238 132" class="fl"/>
+              <path d="M240 40 C 205 58, 185 68, 158 80" class="fl fl-hot"/>
+            </svg>
+          </div>
+          <div class="earn-strip">Earned this month: <b>$87.40</b> · VPP event credits: <b>$31.00</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="section">
+    <div class="container">
+      <h2>You bought the hardware. The savings never showed.</h2>
+      <p class="section-lead">Each device optimizes for itself. The grid pays for coordination — and coordination is exactly what's missing.</p>
+      <div class="cards cards-3">
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="8" height="7" rx="1.5"/><rect x="13" y="13" width="8" height="7" rx="1.5"/><path d="M11 7.5h4v6" opacity="0"/><path d="m14 7 4 4m0-4-4 4"/></svg>
+          </div>
+          <h3>Devices that don't talk</h3>
+          <p>Your EV charges at 6 PM peak while your battery sits full and your solar export earns pennies. Four apps, four agendas, zero teamwork.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 8 9l4 6 3-9 5 12"/><path d="M3 21h18"/></svg>
+          </div>
+          <h3>Prices that swing 5×</h3>
+          <p>Time-of-use rates spread further every year — peak power costs five times overnight power. Manual timer settings can't keep up with dynamic rates.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5c.4-1 1.4-1.5 2.5-1.5 1.4 0 2.5.9 2.5 2.1 0 1.9-2.9 1.8-2.9 3.4M12 16.5v.5"/></svg>
+          </div>
+          <h3>Money left on the table</h3>
+          <p>Utilities pay $50–$150 per kW-year for flexibility through VPP programs. Most eligible homes have never heard of them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section section-tint" id="features">
+    <div class="container">
+      <h2>One orchestrator behind the meter.</h2>
+      <p class="section-lead">Connects to the hardware you already own and runs the numbers every five minutes.</p>
+      <div class="cards cards-4">
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.5 6h7M6 8.5v7M18 8.5v7M8.5 18h7"/></svg>
+          </div>
+          <h3>Device aggregation</h3>
+          <p>Batteries, EVs, inverters, smart panels, and heat-pump water heaters from 40+ brands, unified under one optimization loop. No extra hardware.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 8 8l4 5 3-7 6 11"/><path d="M14 4h6v6" opacity="0.6"/></svg>
+          </div>
+          <h3>Rate arbitrage on autopilot</h3>
+          <p>Charges everything when power is cheapest, discharges into peaks, and shifts loads around dynamic prices — within comfort rules you set once.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.5 8 8 9 4.5-1 8-4.5 8-9V6z"/><path d="M13.5 8.5 10 13h4l-3.5 4.5" opacity="0.9"/></svg>
+          </div>
+          <h3>Virtual power plant income</h3>
+          <p>We pool your flexibility with thousands of neighbors, bid it into utility programs and wholesale markets, and pass the revenue through monthly.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 9.5V20h12V9.5"/><path d="M12 13v4M10 15h4" opacity="0.9"/></svg>
+          </div>
+          <h3>Outage-ready by default</h3>
+          <p>Storm watch holds your battery at full before grid events. When the lights go out next door, your house doesn't notice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section" id="how">
+    <div class="container">
+      <h2>From sign-up to first payout in one billing cycle.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Link your devices &amp; utility</h3>
+          <p>Sign in to your device accounts and utility — takes about ten minutes. We detect your rate plan and eligible VPP programs automatically.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Set comfort guardrails</h3>
+          <p>Minimum EV charge by morning, backup reserve floor, quiet hours. The optimizer never crosses lines you draw.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Watch the meter run backward</h3>
+          <p>The dashboard shows every decision and every dollar — arbitrage savings, export credits, and VPP event payments, itemized monthly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RETURNS ============ -->
+  <section class="section section-tint" id="returns">
+    <div class="container">
+      <h2>Typical household returns.</h2>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">$940</div>
+          <p>average first-year savings + earnings (battery + EV + solar home)</p>
+        </div>
+        <div class="stat">
+          <div class="stat-num">31%</div>
+          <p>average bill reduction from arbitrage alone</p>
+        </div>
+        <div class="stat">
+          <div class="stat-num">12 GWh</div>
+          <p>flexibility delivered to utilities by the <span data-company>VoltMesh</span> fleet last year</p>
+        </div>
+      </div>
+
+      <div class="quote-card">
+        <blockquote>
+          <p>&ldquo;We had a battery, an EV, and solar for two years and honestly couldn't tell if any of it paid off. <span data-company>VoltMesh</span> linked them in an afternoon. Last month it earned us $112 — including $38 for a heat-wave event where we did literally nothing but stay comfortable.&rdquo;</p>
+          <footer>
+            <div class="avatar">CP</div>
+            <div>
+              <strong>Carmen Park</strong>
+              <span>Homeowner &amp; VPP member — Sacramento, CA</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+
+      <div class="trust-row">
+        <span class="trust-badge">No new hardware</span>
+        <span class="trust-badge">UL 3141-aligned controls</span>
+        <span class="trust-badge">You keep ownership of every kWh</span>
+        <span class="trust-badge">Cancel anytime</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section-cta" id="cta">
+    <div class="container cta-inner">
+      <h2>See what your home could earn.</h2>
+      <p>Enter your email and we'll send the eligibility checker — your utility, your devices, your projected first-year number.</p>
+      <form class="cta-form" id="signup-form">
+        <input type="email" placeholder="you@email.com" required aria-label="Email address">
+        <button type="submit" class="btn btn-light">Check eligibility</button>
+      </form>
+      <p class="cta-confirm" id="signup-confirm" hidden>Sent — check your inbox for the eligibility link.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#a3e635"/>
+            <path d="M17.5 5 9 18h6l-1.5 9L23 14h-6z" fill="#1b2e1d" stroke="none"/>
+          </svg>
+          <span data-company>VoltMesh</span>
+        </a>
+        <p>Grid-edge orchestration for homes and small businesses.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#returns">Returns</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:hello@voltmesh.example.com" data-email>hello@voltmesh.example.com</a>
+        <span data-domain>voltmesh.example.com</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 <span data-company>VoltMesh</span>. All rights reserved. Earnings vary by utility territory, rate plan, and hardware.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("signup-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      this.hidden = true;
+      document.getElementById("signup-confirm").hidden = false;
+    });
+  </script>
+</body>
+</html>
