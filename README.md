@@ -1,4 +1,4 @@
-# VoltMesh — Landing Page
+# Supernova — Landing Page
 
 Static landing page for a **grid-edge energy orchestration** startup (home batteries, EVs, and solar aggregated into virtual power plants, rate arbitrage, flexibility income). No build step, no dependencies — plain HTML/CSS/JS.
 
@@ -8,9 +8,9 @@ Edit the three values at the top of **`config.js`**:
 
 ```js
 const BRAND = {
-  companyName: "VoltMesh",
-  domain: "voltmesh.example.com",
-  contactEmail: "hello@voltmesh.example.com"
+  companyName: "Supernova",
+  domain: "getsupernova.xyz",
+  contactEmail: "hello@getsupernova.xyz"
 };
 ```
 
